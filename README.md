@@ -1,15 +1,15 @@
 # End-to-end-Healthcare-Chatbot-Generative-AI
 
 
-# How to run?
-### STEPS:
+# Steps to run
+## STEP 01:
 
 Clone the repository
 
 ```bash
 Project repo: https://github.com/
 ```
-### STEP 01- Create a conda environment after opening the repository
+## STEP 02- Create a conda environment after opening the repository
 
 ```bash
 conda create -n medibot python=3.10 -y
@@ -20,17 +20,17 @@ conda activate medibot
 ```
 
 
-### STEP 02- install the requirements
+## STEP 03- install the requirements
 ```bash
 pip install -r requirements.txt
 ```
 
 
-### Create a `.env` file in the root directory and add your Pinecone & openai credentials as follows:
+### Create a `.env` file in the root directory and add your Pinecone & Google credentials as follows:
 
 ```ini
 PINECONE_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-OPENAI_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+GOOGLE_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 
 
@@ -44,9 +44,8 @@ python store_index.py
 python app.py
 ```
 
-Now,
 ```bash
-open up localhost:
+In web browser open localhost
 ```
 
 
@@ -55,24 +54,13 @@ open up localhost:
 - Python
 - LangChain
 - Flask
-- GPT
+- Gemini
 - Pinecone
 
-    
+<br>
+
 # AWS-CICD-Deployment-with-Github-Actions
-
-## 1. Login to AWS console.
-
-## 2. Create IAM user for deployment
-
-	#with specific access
-
-	1. EC2 access : It is virtual machine
-
-	2. ECR: Elastic Container registry to save your docker image in aws
-
-
-	#Description: About the deployment
+	Description about the deployment
 
 	1. Build docker image of the source code
 
@@ -84,20 +72,26 @@ open up localhost:
 
 	5. Lauch your docker image in EC2
 
-	#Policy:
+## Steps
+
+### 1. Login to AWS console.
+
+### 2. Create IAM user for deployment
+	Policy:
 
 	1. AmazonEC2ContainerRegistryFullAccess
-
 	2. AmazonEC2FullAccess
 
 	
-## 3. Create ECR repo to store/save docker image
+### 3. Create ECR repo to store/save docker image
+	- ECR: Elastic Container registry to save your docker image in aws
     - Save the URI(example): 970547337635.dkr.ecr.ap-south-1.amazonaws.com/healthcare-chatbot
 
 	
-## 4. Create EC2 machine (Ubuntu) 
+### 4. Create EC2 machine (Ubuntu)
+	- EC2: It is virtual machine
 
-## 5. Open EC2 and Install docker in EC2 Machine:
+### 5. Open EC2 and Install docker in EC2 Machine:
 	
 	
 	#optinal
@@ -117,7 +111,7 @@ open up localhost:
 	newgrp docker
 	
 # 6. Configure EC2 as self-hosted runner:
-    setting>actions>runner>new self hosted runner> choose os> then run command one by one
+    In Github repo goto: setting>actions>runner>new self hosted runner> choose os> then run command one by one in EC2
 
 
 # 7. Setup github secrets:
