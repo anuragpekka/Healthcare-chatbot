@@ -14,7 +14,7 @@ list_of_files = [
     "app.py",
     "research/trials.ipynb",
     "test.py",
-    "logs/flask_app.log"
+    "logs/"
 ]
 
 
