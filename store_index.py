@@ -56,4 +56,5 @@ try:
         )
     print("All documents upserted to Pinecone.")
 except Exception as e:
-    print(f"Error while upserting data to Pinecone")
+    print(f"Error while upserting data to Pinecone:-")
+    print(f"{e}")

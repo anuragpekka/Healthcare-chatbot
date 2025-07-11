@@ -39,7 +39,7 @@ docsearch = PineconeVectorStore.from_existing_index(
     embedding=embeddings
 )
 
-retriever = docsearch.as_retriever(search_type=config.VECTOR_STORE_SEARCH_TYPE, search_kwargs={"k":3})
+retriever = docsearch.as_retriever(search_type=config.VECTOR_STORE_SEARCH_TYPE, search_kwargs={"k":config.NUM_DOCS})
 
 # Initialize the Gemini model
 llm = ChatGoogleGenerativeAI(

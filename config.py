@@ -8,12 +8,13 @@ CHUNK_OVERLAP = 50
 DATA_DIR = r".\Data"
 GLOB_PATTERNS = ["*pdf"]
 
-INDEX_NAME = "medicalbot-1"
+INDEX_NAME = "medicalbot-cs300-ol50"
 INDEX_EMBEDDING_SIZE = 768
 INDEX_METRIC = "cosine"
 INDEX_CLOUD = "aws"
 INDEX_REGION = "us-east-1"
 VECTOR_STORE_SEARCH_TYPE = "similarity"
+NUM_DOCS = 10
 
 LOG_LEVEL = logging.DEBUG
 LOG_FILE = "logs/flask_app.log"
