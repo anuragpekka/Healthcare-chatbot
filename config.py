@@ -14,7 +14,7 @@ INDEX_METRIC = "cosine"
 INDEX_CLOUD = "aws"
 INDEX_REGION = "us-east-1"
 VECTOR_STORE_SEARCH_TYPE = "similarity"
-NUM_DOCS = 10
+NUM_DOCS = 25
 
 LOG_LEVEL = logging.DEBUG
 LOG_FILE = "logs/flask_app.log"
@@ -23,9 +23,6 @@ LOG_BACKUP_COUNT = 5 # keep 5 backups
 
 LLM_TEMPERATURE = 0.4
 LLM_MAX_TOKENS = 500
-
-from  src.prompt import system_prompt_detailed
-SYSTEM_PROMPT = system_prompt_detailed
 
 HOST_IP = "0.0.0.0"
 HOST_PORT = 8080

@@ -11,7 +11,7 @@ from logging.handlers import RotatingFileHandler
 import markdown
 
 from src.helper import download_google_embeddings
-from src.prompt import system_prompt_concise
+from src.prompt import system_prompt_concise, system_prompt_detailed
 import config
 
 app = Flask(__name__)
@@ -51,7 +51,7 @@ llm = ChatGoogleGenerativeAI(
 
 prompt = ChatPromptTemplate.from_messages(
     [
-        ("system", config.SYSTEM_PROMPT),
+        ("system", system_prompt_detailed),
         ("human", "{input}"),
     ]
 )
