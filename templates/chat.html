@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}"/>
-		<link rel="icon" href="/static/chat-icon.jpg">
+		<link rel="icon" href="/static/icon.png">
 	</head>
 	
 	
@@ -39,11 +39,11 @@
 							<form id="messageArea" class="input-group">
                                 <input type="text" id="text" name="msg" placeholder="Type your message..." autocomplete="off" class="form-control type_msg" required/>
 								<div class="input-group-append">
-									<button type="submit" name="action" value="long_answer" class="input-group-text send_btn_long"><i class="fas fa-location-arrow">Long Answer</i></button>
+									<button type="submit" name="action" value="long_answer" class="input-group-text send_btn_long" title="Get long answer"><i class="fas fa-location-arrow"></i></button>
 								</div>
 								<div class="input-group-append">
 									<!-- <button type="submit" name="action" value="short_answer" class="input-group-text send_btn"><i class="fas fa-location-arrow"></i>Short Answer</button> -->
-									<button type="submit" name="action" value="short_answer" class="input-group-text send_btn_short"><i class="fas fa-location-arrow">Short Answer</i></button>
+									<button type="submit" name="action" value="short_answer" class="input-group-text send_btn_short" title="Get short answer"><i class="fas fa-pen"></i></button>
 								</div>
 							</form>
 						</div>
