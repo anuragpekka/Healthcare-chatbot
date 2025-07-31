@@ -1,4 +1,8 @@
-# End-to-end-Healthcare-Chatbot-Generative-AI
+# 🩺 HealthCare Chatbot
+
+## 💡 Overview
+
+The aim of this project is to create a domain-specific chatbot capable of engaging in meaningful health-related conversations. It utilizes Retrieval-Augmented Generation (RAG) to deliver context-aware responses and leverages a powerful LLM for fluent and natural interaction.
 
 
 # Steps to run
