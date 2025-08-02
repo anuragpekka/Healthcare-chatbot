@@ -5,55 +5,19 @@
 The aim of this project is to create a domain-specific chatbot capable of engaging in meaningful health-related conversations. It utilizes Retrieval-Augmented Generation (RAG) to deliver context-aware responses and leverages a powerful LLM for fluent and natural interaction.
 
 
-# Steps to run
-## STEP 01:
+## Key Features
 
-Clone the repository
+- **Conversational AI Interface**  
+  Natural language-based interface for common medical and wellness queries.
 
-```bash
-Project repo: https://github.com/
-```
-## STEP 02- Create a conda environment after opening the repository
+- **LLM-Powered Responses**  
+  Uses **Gemini** via **LangChain** for intelligent and coherent response generation.
 
-```bash
-conda create -n medibot python=3.10 -y
-```
+- **Context Retrieval with RAG**  
+  Retrieves relevant information using a **Pinecone**-powered Retrieval-Augmented Generation (RAG) pipeline.
 
-```bash
-conda activate medibot
-```
-
-
-## STEP 03- install the requirements
-```bash
-pip install -r requirements.txt
-```
-
-
-### Create a `.env` file in the root directory and add your Pinecone & Google credentials as follows:
-
-```ini
-PINECONE_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-GOOGLE_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-```
-
-```ini
-Set configurations in config.py
-```
-
-```bash
-# run the following command to store embeddings to pinecone
-python store_index.py
-```
-
-```bash
-# Finally run the following command
-python app.py
-```
-
-```bash
-In web browser open localhost
-```
+- **Interactive Web Demo**  
+  Simple **Flask**-based front-end demo for user interaction and testing.
 
 
 ### Techstack Used:
